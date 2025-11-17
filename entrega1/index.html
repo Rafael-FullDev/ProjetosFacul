@@ -9,37 +9,73 @@
 </head>
 <body>
     <!-- Cabeçalho com navegação -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <span class="logo-icon">🤝</span>ONG<span>Connect</span>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html" class="active">Início</a></li>
-                        <li><a href="projetos.html">Projetos</a></li>
-                        <li><a href="cadastro.html">Cadastro</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <header class="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🤝</span>
+                ONG<span>Connect</span>
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="projetos.html" class="nav-link dropdown-toggle">
+                            Projetos
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="projetos.html#educacao" class="dropdown-item">Educação</a>
+                            <a href="projetos.html#meio-ambiente" class="dropdown-item">Meio Ambiente</a>
+                            <a href="projetos.html#saude" class="dropdown-item">Saúde</a>
+                            <a href="projetos.html#tecnologia" class="dropdown-item">Tecnologia</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            Envolva-se
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="cadastro.html" class="dropdown-item">Seja Voluntário</a>
+                            <a href="cadastro.html#doacao" class="dropdown-item">Faça uma Doação</a>
+                            <a href="#" class="dropdown-item">Parcerias</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cadastro.html" class="nav-link">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
 
     <!-- Conteúdo principal -->
     <main>
         <!-- Seção Hero -->
         <section class="hero">
-            <div class="container">
-                <h1>Transformando Vidas, Construindo Futuros</h1>
-                <p>Conectamos ONGs, voluntários e doadores para criar impacto social positivo em comunidades carentes.</p>
-                <a href="cadastro.html" class="btn btn-success">Junte-se a Nós</a>
-            </div>
-        </section>
+    <div class="container">
+        <h1>ONG Connect</h1>
+        <p>Conectando pessoas para transformar realidades</p>
+        <a href="cadastro.html" class="btn btn-success">Junte-se a Nós</a>
+    </div>
+</section>
 
         <!-- Seção Sobre a Organização -->
         <section class="container">
-            <h2>Sobre a Organização</h2>
+    <h2>Projetos em Destaque</h2>
+    <div id="projects-container" class="projects-grid"></div>
             <p>A ONG Connect é uma plataforma que nasceu da necessidade de conectar organizações não governamentais com pessoas dispostas a fazer a diferença. Nossa missão é facilitar o engajamento social através da tecnologia.</p>
             
             <div class="about-grid">
